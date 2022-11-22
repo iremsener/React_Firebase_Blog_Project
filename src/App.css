@@ -1,0 +1,324 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+:root{
+  --font-style: 'Nunito Sans', sans-serif;
+} */
+
+.App {
+  text-align: center;
+}
+
+body {
+  padding: 0%;
+  margin: 0%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: rgb(24, 19, 19);
+  color: antiquewhite;
+}
+nav  {
+  margin: 0;
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: yellow;
+  text-decoration: none;
+  box-shadow: 0 4px 10px 0 rgb(143,124,236, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+  border-radius: 15px;
+  
+}
+a{
+  color: rgb(139, 128, 151);
+  text-decoration: none;
+  margin: 10px;
+  font-size: 17px;  
+}
+a:hover{
+  color: #44c614;
+}
+.createPostPage{
+  width: 100%;
+  height: calc(100vh-80px);
+  display: grid;
+  place-items: center;
+}
+.cpContainer{
+  position: absolute;
+  border: 1px solid black;
+  margin: 35px;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: auto;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: #242026;
+  box-shadow: 0 15px 25px  rgb(11, 10, 15);
+  border-radius: 10px;
+  flex-direction: column;
+  
+}
+.cpContainer h2{
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+.cpContainer label{
+  left: 0;
+  padding: 10px 0;
+  font-size: 20px;
+  color: #fff;
+  pointer-events: none;
+  transition: 5s;
+}
+.cpContainer .inputGp{
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.inputGp input,
+.inputGp textarea{
+  font-size: 18px;
+  color: #ebeebe;
+  
+  padding: 5px;
+  background: transparent;
+}
+.inputGp input{
+  height: 30px;
+}
+.inputGp textarea{
+  height: 100px;
+}
+.cpContainer button{
+  background: #000;
+  position: relative;
+  margin-top: 30px;
+  padding: 10px 30px;
+  color: rgb(143,124,236);
+  font-size: 15px;
+  /* text-transform: uppercase; */
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-left: 150px;
+}
+
+.cpContainer button:hover{
+  color: #44c614;
+}
+.loginPage{
+  width: 100%;
+  height: calc(100vh-80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.loginPage p{
+  font-size: 30px;
+}
+
+.login-with-google-btn{
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  padding: 5px 16px 12px 42px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04),  0 1px 1px rgba(0, 0, 0, 0.25);
+  color: #757575;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color:rgb(143,124,236) ;
+  color: #000;
+  background-position: 12px 11px;
+
+}
+.login-with-google-btn:hover{
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04),  0 2px 4px rgba(0, 0, 0, 0.25);
+}
+.login-with-google-btn:active{
+  background-color: #eeeeee;
+}
+.login-with-google-btn:focus{
+  outline: none;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04),  0 1px 1px rgba(0, 0, 0, 0.25), 0 0 0 3px #c8dafc;
+
+}
+.login-with-google-btn:disabled{
+  filter: grayscale(100%);
+  background-color: #ebeebe;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04),  0 1px 1px rgba(0, 0, 0, 0.25);
+  cursor: not-allowed;
+}
+.world{
+  position: relative;
+  width: 350px;
+  height: 350px;
+  background-color: #2196f3;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 60px;
+  margin-left: 80px;
+}
+.world .snowdan{
+  position: absolute;
+  width: 350px;
+  height: 500px;
+  background:radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 47%, rgba(0,0,0,1) 74%, rgba(0,0,0,1) 100%);
+}
+.world .world-map{
+  width: 350px;
+  height: 400px;
+  background: url("world6.jpg");
+  background-size: cover;
+  animation: return 40s linear 0s infinite;
+}
+@keyframes return{
+  from{}
+  to{background-position: -1000px 0;}
+}
+.homePage{
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.hero{
+  display: flex;
+}
+.hero .static-txt{
+  color: #fff;
+  font-size: 50px;
+  font-weight: 400;
+  margin-left: 200px;
+  margin-top: 150px;
+
+}
+.hero .dynamic-txts{
+  margin-left: 5px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+  margin-top: 150px;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: #16f37d;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 7s steps(4) infinite;
+
+}
+@keyframes slide{
+  100%{
+    top: -360px;
+  }
+}
+.tmsf{
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.header{
+  display: flex;
+}
+.ring{
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%,-50%);
+  width: 250px;
+  height: 250px;
+  background: transparent;
+  border: 3px solid #3c3c3c;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 250px;
+  font-size: 2.0rem;
+  color: #fff000;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px #fff000;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+.ring:before{
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 100%;
+  height: 100%;
+  border: 3px solid transparent;
+  border-top: 3px solid #fff000;
+  border-right: 3px solid #fff000;
+  border-radius: 50%;
+  animation: animation 3s linear infinite;
+
+}
+
+@keyframes animation{
+  0%{
+      transform: rotate(0deg);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+  
+}  
+
+
+@keyframes animate{
+  0%{
+      transform: rotate(45deg);
+  }
+  100%{
+      transform: rotate(405deg);
+  }
+  
+}  
+.first{
+  width: 50%;
+}
+.second{
+  width: 50%;
+  margin-top: 50px;
+  margin-right: 50px;
+
+}
+.lc h2{
+  position: relative;
+  font-size: 10Vw;
+  color: #252839;
+  -webkit-text-stroke: 0.3Vw #383d52;
+  text-transform: uppercase;
+}
+.lc h2::before{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: #01fe87;
+  -webkit-text-stroke: 0Vw #383d52;
+  border-right: 2px solid #01fe87;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+}
+@keyframes animate{
+  0%,10%,100%{
+    width: 0;
+  }
+  70%,90%{
+    width: 55%;
+  }
+}
+.lc{
+  margin-left: 420px;
+  
+}
